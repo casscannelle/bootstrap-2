@@ -1,0 +1,27 @@
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+.h5{
+    background-color:black !important;
+}
+
+footer{
+    align-content: center;
+    background-color: beige;
+    height: 70px;
+    padding: 15px;
+}

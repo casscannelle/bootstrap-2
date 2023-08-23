@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Dança En L'air - Escola de Dança</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/header_pequeno.png">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produtos">Modalidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/slider_1.jpg" class="d-block w-100" alt="Ballet">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider_2.jpg" class="d-block w-100" alt="Jazz">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/slider_3.jpg" class="d-block w-100" alt="Ballet">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <img src="./images/sobre_nos.jpg" alt="Bailarina" class="img-fluid">
+                </div>
+                <div class="col-md-7 col-sm-12">
+                <h2>Sobre nós</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
+                <a class="btn btn-primary" href="#produtos">Confira nossas modalidades</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Modalidades</h2>
+
+                    <div class="card">
+                        <img src="./images/ballet_infantil.jpg" alt="ballet_infantil" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Ballet Infantil</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >Ver horários</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/ballet_adulto.jpg" alt="ballet_adulto" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Ballet Adulto</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2" >Ver horários</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/jazz.jpg" alt="Jazz" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">Jazz Infantil</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3" >Ver horários</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="cadastro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Pré-matrícula</h2>
+                    <p>Preencha seus dados para fazer a sua matrícula nos nossos cursos</p>
+                </div>
+            </div>
+            
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                  <div class="col">
+                      <label for="validationCustom01">Nome</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Nome Completo" value="" required>
+                        <div class="valid-feedback">
+                         Tudo certo!
+                        </div>
+                        <div class="col">
+                          <label for="validationCustom02">E-mail</label>
+                          <input type="text" class="form-control" id="validationCustom02" placeholder="E-mail" value="" required>
+                          <div class="valid-feedback">
+                          Tudo certo!
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                  <div class="form-row">
+                  <div class="col">
+                    <label for="validationCustom03">Endereço</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Endereço completo" required>
+                    <div class="invalid-feedback">
+                      Por favor, informe seu endereço completo.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom04">Complemento</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Complemento" required>
+                    <div class="invalid-feedback">
+                      Por favor, informe um complemento válido.
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <label for="validationCustom04">Bairro</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="Bairro" required>
+                    <div class="invalid-feedback">
+                      Por favor, informe um bairro válido.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom05">Telefone</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Telefone" required>
+                    <div class="invalid-feedback">
+                      Por favor, informe um telefone válido.
+                    </div>
+                  </div>
+                  <div class="col">
+                    <label for="validationCustom05">CEP</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="CEP" required>
+                    <div class="invalid-feedback">
+                      Por favor, informe um CEP válido.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Concordo com os termos e condições
+                    </label>
+                    <div class="invalid-feedback">
+                      Você deve concordar, antes de continuar.
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </form>
+              
+              <script>
+              // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Faz um loop neles e evita o envio
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+               
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ballet Infantil</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Horários</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Dias</th>
+                                <th>Horários</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda e Quarta</td>
+                                <td>10h às 10h30</td>
+                            </tr>
+                            <tr>
+                                <td>Terça e Quinta</td>
+                                <td>18h às 18h30</td>
+                            </tr>
+                            <tr>
+                                <td>Sábado</td>
+                                <td>9h45 às 10h45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ballet Adulto</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os horários</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Dias</th>
+                                <th>Horários</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda e Quarta</td>
+                                <td>18h30 às 20h30</td>
+                            </tr>
+                            <tr>
+                                <td>Terça e Quinta</td>
+                                <td>19h às 21h</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta e sábado</td>
+                                <td>9h45 às 11h45</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jazz</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os horários</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Dias</th>
+                                <th>Horários</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Segunda e Quarta</td>
+                                <td>16h às 16h30</td>
+                            </tr>
+                            <tr>
+                                <td>Terça e Quinta</td>
+                                <td>10h às 10h30</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta</td>
+                                <td>18h às 18h30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer><center>Dança En L'air - Todos os direitos reservados</center></footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
